@@ -1,0 +1,25 @@
+data:
+  root: data/political_openfake
+  resize: [380, 380]
+  max_items: null
+split:
+  train_n: 2800
+  val_n: 600
+  test_n: 600
+  seed: 42
+  stratify: true
+train:
+  epochs: 30
+  batch_size: 32
+  lr_backbone: 1.0e-5
+  lr_head: 1.0e-4
+  weight_decay: 1.0e-4
+  patience: 5
+  num_workers: 4
+model:
+  dropout_p: 0.0
+eval:
+  threshold: 0.5
+  ece_bins: 15
+mc:
+  T: 20

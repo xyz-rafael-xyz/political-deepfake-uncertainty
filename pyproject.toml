@@ -1,0 +1,26 @@
+[project]
+name = "polideep"
+version = "0.1.0"
+description = "Uncertainty-aware political deepfake detection experiments"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.0",
+  "torchvision>=0.15",
+  "timm>=0.9",
+  "datasets>=2.18",
+  "transformers>=4.38",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "pillow",
+  "tqdm",
+  "pyyaml",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

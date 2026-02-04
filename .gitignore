@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+
+# Outputs
+runs/
+artifacts/
+figures/
+tables/
+data/
+
+# Jupyter
+.ipynb_checkpoints/
